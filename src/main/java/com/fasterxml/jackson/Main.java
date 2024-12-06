@@ -8,9 +8,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Main {
     public static void main(String[] args) throws JsonProcessingException {
-        String[] cars = { "Tesla", "Corvette", "BYD", "GWM", "Camaro" };
+        String simple = "123";
+        // String[] cars = { "Tesla", "Corvette", "BYD", "GWM", "Camaro" };
         ObjectMapper om = new ObjectMapper();
-        System.out.println(om.writeValueAsString(cars));
+        System.out.println(om.writeValueAsString(simple));
 
     }
 }
