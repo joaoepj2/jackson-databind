@@ -1,8 +1,5 @@
 package com.fasterxml.jackson;
 
-import java.lang.reflect.Array;
-import java.util.List;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
