@@ -23,17 +23,15 @@
 ## 11 Dec
 - ObjectMapper provides functionality for reading and writing JSON, either to and from basic POJOs (Plain Old Java Objects), or to and from a general-purpose JSON Tree Model, as well as related functionality for performing conversions. ObjectMapper class has a JsonFactory as attribute.
 - JsonFactory is the main factory class of Jackson package, used to configure and construct reader (aka  JsonParser) and writer (aka JsonGenerator) instances.
-                                                          
+```                                                          
                       TreeCodec                           
-                          X                               
-                          X                               
+                          |                               
                       ObjectCodec                         
-                          X                               
-                          X                               
-       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     
-       X                  X                         X     
+                          |                               
+       ----------------------------------------------     
+       |                  |                         |     
   ObjectReader        ObjectMapper            ObjectWriter
                         *JsonFactory
-
+```
 - Now MainTest class has two methods: firstTest() and parserTest(). The two tests PASS, and there is a little comment on how to make them FAIL. You can run only these tests by using VS Code Testing extension. parserTest() instantiates a JsonParser via JsonFactory.createParser() and asserts that first token is as expected.
 - Move Main.main() code to MainTest.objectMapperTest()                     
