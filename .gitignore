@@ -26,3 +26,6 @@ syntax: glob
 
 # Other/local
 /gh-workflows
+
+# VS Code
+.vscode
