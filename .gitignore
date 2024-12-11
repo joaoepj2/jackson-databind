@@ -28,4 +28,4 @@ syntax: glob
 /gh-workflows
 
 # VS Code
-.vscode
+.vscode/*
